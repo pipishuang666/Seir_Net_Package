@@ -1,0 +1,25 @@
+---
+title: "test-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{test-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+# （1）首先明确需求：
+# 
+#   构建规模为n*n小世界网络，模拟疾病传播过程，实现节点状态之间的改变，最终得到输出图。
+# 
+# （2）明确测试要求：
+# 
+#   当n=10000时，t=365时，被治愈人数大于等于0。此要求用于测试最基本的机制是否实现。其余具体数据的测试难以找到一个标准。
+```
